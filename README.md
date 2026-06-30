@@ -73,7 +73,7 @@ cd imc-go-app
 ### Lancer l'application
 
 ```bash
-go run main.go
+go run main1.go
 ```
 
 Ouvrir ensuite :
