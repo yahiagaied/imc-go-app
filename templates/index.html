@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title> Formulaire </title>
+    <link rel="stylesheet" href="/static/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CDN : Bootstrap CSS and JS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Bootstrap Bundle JS includes Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+    <p class="bg-primary text-white text-center p-3">😉 Calcul de La Masse Corporelle (IMC) :</p>
+    <form  method="post" class="container" action="/traitement">
+        <div class="mb-3">
+            <p class="bg-info text-white p-1">Veuillez remplir tous les champs :</p>
+            <label for="taille" class="form-label text-danger">Taille (en m) :</label>
+            <input type="text" class="form-control" id="taille" name="taille" required placeholder="Entrez votre taille en m(ex: 1.75)">
+        </div>
+        <div class="mb-3">
+            <label for="poids" class="form-label text-danger">Poids(en kg) :</label>
+            <input type="text" class="form-control" id="poids" name="poids" required placeholder="Entrez votre poids en kg(ex: 70)">
+        </div>
+        <div class="mb-3">
+            <label for="age" class="form-label text-danger">Âge :</label>
+            <input type="text" class="form-control" id="age" name="age" required placeholder="Entrez votre âge">
+        </div>
+        <div class="mb-3">
+            <label for="sexe" class="form-label text-danger">Sexe :</label>
+            <select class="form-control" id="sexe" name="sexe" required>
+                <option value="">Sélectionnez votre sexe</option>
+                <option value="homme">Homme</option>
+                <option value="femme">Femme</option>
+            </select>
+        </div>
+        <button type="submit" class="btn btn-outline-success btn-lg"> 📅 Calculer</button>
+        <button type="reset" class="btn btn-outline-secondary btn-lg"> 🔄 Réinitialiser</button>
+    </form>
+    </form>
+    <footer class="bg-info text-white text-center p-3 mt-4">
+        <p>Développé avec ❤️ en Go par Yahia Gaied © 2026 Calcul de l'IMC. Tous droits réservés.</p>
+    </footer>
+</body>
+</html>
+     
